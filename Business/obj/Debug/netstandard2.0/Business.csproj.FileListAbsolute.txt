@@ -13,3 +13,4 @@ C:\Users\Gurkan\Desktop\MakaleCore\Business\bin\Debug\netstandard2.0\DataAccess.
 C:\Users\Gurkan\Desktop\MakaleCore\Business\bin\Debug\netstandard2.0\Entities.pdb
 C:\Users\Gurkan\Desktop\MakaleCore\Business\bin\Debug\netstandard2.0\Core.pdb
 C:\Users\Gurkan\Desktop\MakaleCore\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
+C:\Users\Gurkan\Desktop\MakaleCore\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache

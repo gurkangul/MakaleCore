@@ -34,6 +34,12 @@ namespace Business.Concrete
 
         }
 
+        public Article GetLastArticle()
+        {
+            return _articleDal.GetList().LastOrDefault();
+
+        }
+
         public List<Article> GetList()
         {
             return _articleDal.GetList().ToList();

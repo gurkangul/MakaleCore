@@ -6,3 +6,4 @@ C:\Users\Gurkan\Desktop\MakaleCore\Core\obj\Debug\netstandard2.0\Core.AssemblyIn
 C:\Users\Gurkan\Desktop\MakaleCore\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
 C:\Users\Gurkan\Desktop\MakaleCore\Core\obj\Debug\netstandard2.0\Core.dll
 C:\Users\Gurkan\Desktop\MakaleCore\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\Gurkan\Desktop\MakaleCore\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
