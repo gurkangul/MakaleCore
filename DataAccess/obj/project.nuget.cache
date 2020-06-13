@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Sp6qPx16vdxQcbYhUDgdpmWaP8CXC/c6h9V4F2oslxbWnBjCJisWdzmnvZszjd2k+sj3QdCvLhh/QNiWHEJuRg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gurkan\\Desktop\\MakaleCore\\DataAccess\\DataAccess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gurkan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Gurkan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

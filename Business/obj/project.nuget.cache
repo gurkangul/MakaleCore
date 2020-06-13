@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "l1MDSzo6+pZ5zcn/jglkiXVqiSYGLcquvX9fmsbyqBX9ZQGM6RByfvmYXsf+Ni0yyU4Ky/Tuse/2VbnL1QNQzQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gurkan\\Desktop\\MakaleCore\\Business\\Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gurkan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Gurkan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
