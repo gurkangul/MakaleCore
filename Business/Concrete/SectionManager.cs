@@ -27,9 +27,10 @@ namespace Business.Concrete
             _sectionDal.Delete(section);
         }
 
-        public Section GetById(int sectionId)
+        public List<Section> GetByArticleId(int articleId)
         {
-            return _sectionDal.Get(p => p.SectionId == sectionId);
+            return _sectionDal.GetList(v => v.ArticleId == articleId).ToList();
+
 
         }
 

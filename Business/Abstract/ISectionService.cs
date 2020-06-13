@@ -7,7 +7,7 @@ namespace Business.Abstract
 {
    public interface ISectionService
     {
-        Section GetById(int sectionId);
+        List<Section> GetByArticleId(int sectionId);
         List<Section> GetList();
         void Add(Section section);
         void Delete(Section section);

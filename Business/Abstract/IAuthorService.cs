@@ -7,7 +7,7 @@ namespace Business.Abstract
 {
    public interface IAuthorService
     {
-        Author GetById(int authorId);
+        List<Author> GetByArticleId(int articleId);
         List<Author> GetList();
         void Add(Author author);
         void Delete(Author author);

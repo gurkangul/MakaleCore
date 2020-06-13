@@ -30,7 +30,7 @@ namespace WebAPI.Controllers
         public IActionResult GetList()
         {
             var result = _articleService.GetList();
-            if (result.Count>=0)
+            if (result.Count >= 0)
             {
                 return Ok(result);
             }
@@ -44,22 +44,59 @@ namespace WebAPI.Controllers
 
             try
             {
-               _articleService.Add(article.Article);
-               var lastArticle = _articleService.GetLastArticle();
-               var newSec = new Section
-               {
-                   ArticleId = lastArticle.ArticleId,
-                   Title = article.Section.Title,
-                   Description = article.Section.Description
-               };
-                _sectionService.Add(newSec);
-                var newAuthor = new Author
+                _articleService.Add(article.Article);
+                var lastArticle = _articleService.GetLastArticle();
+                foreach (var item in article.Section)
                 {
-                    ArticleId = lastArticle.ArticleId,
-                    FirstName = article.Author.FirstName,
-                    LastName = article.Author.LastName
-                };
-                _authorService.Add(newAuthor);
+                    var newSec = new Section
+                    {
+                        ArticleId = lastArticle.ArticleId,
+                        Title = item.Title,
+                        Description = item.Description
+                    };
+                    _sectionService.Add(newSec);
+                }
+
+                foreach (var item in article.Author)
+                {
+                    var newAuthor = new Author
+                    {
+                        ArticleId = lastArticle.ArticleId,
+                        FirstName = item.FirstName,
+                        LastName = item.LastName
+                    };
+                    _authorService.Add(newAuthor);
+                }
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+
+            return Ok();
+        }
+
+        [HttpPost("delete")]
+        public IActionResult Delete(int articleId)
+        {
+
+            try
+            {
+                var article = _articleService.GetById(articleId);
+                var findSection = _sectionService.GetByArticleId(article.ArticleId);
+                foreach (var item in findSection)
+                {
+                    _sectionService.Delete(item);
+
+                }
+                var findAuthor = _authorService.GetByArticleId(article.ArticleId);
+
+                foreach (var item in findAuthor)
+                {
+                    _authorService.Delete(item);
+
+                }
             }
             catch (Exception e)
             {

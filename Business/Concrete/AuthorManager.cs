@@ -27,9 +27,9 @@ namespace Business.Concrete
             _authorDal.Delete(author);
         }
 
-        public Author GetById(int authorId)
+        public List<Author> GetByArticleId(int articleId)
         {
-            return _authorDal.Get(p => p.AuthorId == authorId);
+            return _authorDal.GetList(v=>v.ArticleId==articleId).ToList();
 
         }
 
