@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wzymkbKoOe3xotNixGUCAdvdEFHkIZaRAG/CZM4og12Cm4CYDEr6mCU2KUEC+/wKYtpw3gdVGa6hzZN0OnNrFw==",
+  "dgSpecHash": "3JPjSF6YB9z0ed+cZQm9E9LaC91ptmJis0pnYuSENWAuGLq1+DixMQdyEmHVumJ+DHKNGQf6CTxz44Seicu3Xg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gurkan\\Desktop\\MakaleCore\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Gurkan\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
+    "C:\\Users\\Gurkan\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\Gurkan\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Gurkan\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Gurkan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

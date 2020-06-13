@@ -36,8 +36,6 @@ C:\Users\Gurkan\Desktop\MakaleCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Exte
 C:\Users\Gurkan\Desktop\MakaleCore\WebAPI\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Gurkan\Desktop\MakaleCore\WebAPI\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Gurkan\Desktop\MakaleCore\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CopyComplete
-C:\Users\Gurkan\Desktop\MakaleCore\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\Gurkan\Desktop\MakaleCore\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Gurkan\Desktop\MakaleCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Gurkan\Desktop\MakaleCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Gurkan\Desktop\MakaleCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
