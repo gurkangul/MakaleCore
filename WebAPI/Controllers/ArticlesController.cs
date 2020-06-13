@@ -29,10 +29,25 @@ namespace WebAPI.Controllers
         [HttpGet("getall")]
         public IActionResult GetList()
         {
-            var result = _articleService.GetList();
-            if (result.Count >= 0)
+            List<ArticleViewModel> listView=new List<ArticleViewModel>();
+            var articles = _articleService.GetList();
+
+            foreach (var article in articles)
             {
-                return Ok(result);
+                var sections = _sectionService.GetByArticleId(article.ArticleId);
+                var authors = _authorService.GetByArticleId(article.ArticleId);
+                var viewModel = new ArticleViewModel
+                {
+                    Section = sections,
+                    Author = authors,
+                    Article = article
+                };
+                listView.Add(viewModel);
+            }
+          
+            if (listView.Count >= 0)
+            {
+                return Ok(listView);
             }
 
             return BadRequest();
@@ -96,6 +111,35 @@ namespace WebAPI.Controllers
                 {
                     _authorService.Delete(item);
 
+                }
+                _articleService.Delete(article);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+
+            return Ok();
+        }
+
+        [HttpPost("update")]
+        public IActionResult Update(ArticleViewModel article)
+        {
+
+            try
+            {
+                _articleService.Update(article.Article);
+
+                foreach (var item in article.Section)
+                {
+                    
+                    _sectionService.Update(item);
+                }
+
+                foreach (var item in article.Author)
+                {
+                  
+                    _authorService.Update(item);
                 }
             }
             catch (Exception e)
