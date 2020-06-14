@@ -1,6 +1,7 @@
 # Projede kullandığınız tasarım desenleri hangileridir?Bu desenleri neden kullandınız?
 ```
-Generic Repository deseni kullanılmıştır.Kod tekrarından kaçınmak,hata yönetimini kontrol altına almak,kod yazımını kolaylaştırmak ve test için kolaylık sağladığından dolayı bu deseni kullandım.
+Generic Repository deseni kullanılmıştır.Kod tekrarından kaçınmak,
+hata yönetimini kontrol altına almak,kod yazımını kolaylaştırmak ve test için kolaylık sağladığından dolayı bu deseni kullandım.
 ```
 
 # Kullandığınız teknoloji ve kütüphaneler hakkında daha önce tecrübeniz oldu mu? Tek tek yazabilir misiniz?
