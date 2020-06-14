@@ -149,5 +149,29 @@ namespace WebAPI.Controllers
 
             return Ok();
         }
+
+        [HttpGet("search")]
+        public IActionResult Search(int articleId)
+        {
+
+            try
+            {
+                var article=  _articleService.GetById(articleId);
+                var sections = _sectionService.GetByArticleId(articleId);
+                var authors = _authorService.GetByArticleId(articleId);
+                var result= new ArticleViewModel
+                {
+                    Section = sections,
+                    Article = article,
+                    Author = authors
+                };
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+
+        }
     }
 }
